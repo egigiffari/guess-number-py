@@ -31,7 +31,7 @@ def main():
             print("Too High, Try again")
             continue
 
-        print(f"Congratulations, the number is {secret_number}")
+        print(f"Correct!, the number is {secret_number}")
         print("Attempt: ", attempt)
         is_running = False
 
