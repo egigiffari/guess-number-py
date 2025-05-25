@@ -7,8 +7,9 @@ def main():
 
     low_num = 1
     high_num = 100
+    print(f"Select a number between {low_num} and {high_num}")
+    
     attempt = 0
-
     secret_number = random.randint(low_num, high_num)
     is_running = True
 
