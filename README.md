@@ -1,16 +1,26 @@
-# 🎮 Guess the Number Game - Python (Terminal Version)
+# 🎮 Guess the Number Game - Python Web Version (Flask)
 
-A simple terminal-based number guessing game built with Python. The program randomly selects a number between 1 and 100, and the player must guess it correctly.
+A simple web-based number guessing game built with **Python** and **Flask**. The program randomly selects a number between 1 and 100, and the player must guess it through a web interface.
 
 ---
 
 ## 🧩 Project Description
 
-- The program picks a random number between 1 and 100.
-- The user inputs guesses via the terminal.
-- The program provides hints: "Too high", "Too low", or "Correct!".
-- The number of attempts is counted and shown at the end.
-- Runs entirely in the terminal using Python's standard input/output.
+- The server picks a random number between 1 and 100 and stores it in the user's session.
+- The user submits guesses via a web form.
+- The application responds with hints: `"Too high"`, `"Too low"`, or `"Correct!"`.
+- The number of attempts is tracked in the session and shown after a correct guess.
+- Web-based version using the Flask web framework.
+
+---
+
+## 🛠️ Requirements
+
+Make sure you have Python installed (version 3.6 or above recommended). Then install Flask:
+
+```bash
+pip install flask
+```
 
 ---
 
@@ -28,10 +38,10 @@ cd guess_number_game
 
 #### Windows
 ```bash
-python main.py
+python app.py
 ```
 
 #### Linux/MacOS
 ```bash
-python3 main.py
+python3 app.py
 ```
