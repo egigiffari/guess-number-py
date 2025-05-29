@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Guess The Number</title>
+</head>
+<body>
+    <div class="logo">
+        <span>Guess The Number</span>
+    </div>
+
+    <form method="post" action="{{ url_for('index') }}">
+        {% if status != '' %}
+            <div>
+                <span>{{ status }}</span>
+            </div>
+        {% endif %}
+        <div>
+            <label for="guess">Number</label>
+            <input id="guess" name="number" type="number" />
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
