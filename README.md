@@ -1,25 +1,25 @@
-# 🎮 Guess the Number Game - Python Web Version (Flask)
+# 🎮 Guess the Number Game - Python Desktop Version (Qt 6)
 
-A simple web-based number guessing game built with **Python** and **Flask**. The program randomly selects a number between 1 and 100, and the player must guess it through a web interface.
-
----
-
-## 🧩 Project Description
-
-- The server picks a random number between 1 and 100 and stores it in the user's session.
-- The user submits guesses via a web form.
-- The application responds with hints: `"Too high"`, `"Too low"`, or `"Correct!"`.
-- The number of attempts is tracked in the session and shown after a correct guess.
-- Web-based version using the Flask web framework.
+Versi desktop dari game tebak angka sederhana, dibuat dengan **Python** dan **Qt 6** menggunakan modul `PySide6`. Program akan memilih angka acak antara 1 dan 100, dan pemain harus menebaknya melalui antarmuka pengguna grafis (GUI).
 
 ---
 
-## 🛠️ Requirements
+## 🧩 Deskripsi Proyek
 
-Make sure you have Python installed (version 3.6 or above recommended). Then install Flask:
+- Program memilih angka acak antara 1 dan 100 saat aplikasi dimulai.
+- Pemain memasukkan tebakan melalui input di GUI.
+- Aplikasi memberikan petunjuk: `"Terlalu tinggi"`, `"Terlalu rendah"`, atau `"Benar!"`.
+- Jumlah percobaan akan ditampilkan saat tebakan benar.
+
+---
+
+## 🛠️ Persyaratan
+
+Pastikan Python telah terpasang (versi 3.6 ke atas direkomendasikan). Lalu instal **PySide6**:
 
 ```bash
-pip install flask
+pip install PySide6
+
 ```
 
 ---
